@@ -1,0 +1,46 @@
+Testing list for Murielle:
+
+General advice: try to break the system. Do things in the ways you always do, but the do things in ways that result in mess-ups.
+
+NON-EDIT MODE
+
+1. Load image. Check both windows to see whether they update.
+2. Change loaded image. Check both windows to see whether they update. The site chosen in the Comparison Window should always be equal to what was selected in the Main Window.
+3. Change loaded image year. Check both windows to see whether they update.
+4. In NON-EDIT mode, click around the corals to see if their properties are correctly displayed on the Coral Details window. Make sure the details are accurate (eg, the details of the correct coral are pulled from the database).
+5. In NON-EDIT mode, make sure none of the properties can be updated.
+6. Select and unselect a coral. Its boundary should be blue when selected, and back to yellow when unselected.
+
+EDIT MODE
+
+1. In EDIT mode, when you click on a pre-existing coral, does the properties window populate correctly?
+2. In EDIT mode, when you draw a new coral, and then click on an old coral from the comparison window, do the properties populate correctly?
+3. You can draw a coral two different ways, one as a polygon, one as a freehand drawing. Test both. 
+4. You can edit an existing coral mask in two ways. Test both.
+5. Test deleting a coral. Does it get deleted from the "Coral Masks" folder, and also from the database? Both should happen.
+6. Does coral numbering work properly after a coral has been deleted?
+7. Select and unselect a coral. Its boundary should be blue when selected, and back to yellow when unselected.
+
+
+
+
+
+DATABASE
+1. Run reports like you always do. Do the data look ok?
+
+Derya TO DO:
+
+1. When any toggle button is toggled, all else should be untoggled, and vice versa.
+
+Notes:
+1. Can't select multiple corals in NON-EDIT mode.
+
+Need Clarification:
+
+- Please choose the button layout among the 3 I proposed.
+- What is "LocationID" on the Coral Properties Window? Why is it a number? Should it be in words?
+- How do we specify that a coral is partial (eg, it is cutoff in the photo)? Through the gui, or if the mask touches the boundary?
+- What is "coverage" and what does it map to in the database? What are its values? Is it the same thing as isPartial?
+- What is the logic between type, genus, and species in the properties window? If you are able to identify species, that will automatically set Genus and Type. If you identify genus that will automatically set Type. However, it is possible you will identify genus, and not species. In that case, do I need to put in any controls to avoid mistakes?
+- Can two coral masks overlap for any reason? What happens if they do? Should I build a control for that?
+- What to do when coral status = "other"? Should we add a "Non-coral"?
